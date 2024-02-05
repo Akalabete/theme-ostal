@@ -19,9 +19,7 @@
             <div class="presentation-container">
                 <p id="descriptif" class="presentation">
                     <?php _e('
-                    Nous serons heureux de vous accueillir dans un cadre verdoyant et arboré de 10 000 m², avec piscine de 12x6
-                    sécurisée où vous pourrez allier détente et visites culturelles grâce aux nombreuses opportunités offertes
-                    par notre région.
+                    Ostal Numérique est une association qui a pour but de promouvoir le numérique en milieu rural. Elle propose des formations, des ateliers et des conseils sur le numérique. Elle accompagne les particuliers dans leur transition numérique.', 'ostal'); ?>
                     ', 'lesgrandschenes'); ?>
                 </p>
                 <ul class="activity-list">

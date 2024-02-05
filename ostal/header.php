@@ -157,7 +157,83 @@
         ]
       
       </script>
-    </head>
+      <script>
+    function initializeTestimonialsSlider(containerId, prevButtonId, nextButtonId) {
+        fetch('<?php echo get_template_directory_uri(); ?>/assets/data/testimonialslist.json')
+            .then(response => response.json())
+            .then(testimonials => {
+                const testimonialsContainer = document.getElementById(containerId);
+                let currentIndex = 0;
+
+                function showTestimonial(index) {
+                    const testimonial = testimonials[index];
+                    const testimonialItem = document.createElement('div');
+                    testimonialItem.classList.add('testimonial-item');
+                    testimonialItem.innerHTML = `
+                        <div class="testimonial-info">
+                            <p class="testimonial-owner">${testimonial.name}</p>
+                            <p class="testimonial-date">${testimonial.date}</p>
+                            <p class="testimonial-content-title">${testimonial.title}</p>
+                            <p class="testimonial-content">${testimonial.content}</p>
+                        </div>
+                        <div class="testimonial-photo-container">
+                            <img src="<?php echo get_template_directory_uri(); ?>${testimonial.photo}" alt="${testimonial.alt}" class="testimonial-photo" width="400" height="300">
+                        </div>
+                    `;
+
+                    testimonialsContainer.innerHTML = '';
+                    testimonialsContainer.appendChild(testimonialItem);
+                }
+
+                function nextTestimonial() {
+                    currentIndex = (currentIndex + 1) % testimonials.length;
+                    showTestimonial(currentIndex);
+                }
+
+                function prevTestimonial() {
+                    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                    showTestimonial(currentIndex);
+                }
+
+                showTestimonial(currentIndex);
+                document.getElementById(prevButtonId).addEventListener('click', prevTestimonial);
+                document.getElementById(nextButtonId).addEventListener('click', nextTestimonial);
+            })
+            .catch(error => console.error('Error fetching testimonials:', error));
+    }
+
+  
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeTestimonialsSlider('testimonials-container', 'prevButton', 'nextButton', '<?php echo get_template_directory_uri(); ?>/assets/data/testimonialslist.json');
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeTestimonialsSlider('testimonials-container-header', 'prevButtonHeader', 'nextButtonHeader', '<?php echo get_template_directory_uri(); ?>/assets/data/testimonialslist.json');
+    });
+    </script>
+    <?php wp_head(); ?>
+  </head>
+  <body>
+      <header>
+      <div class="sticky-right">
+      <section id="sticky-testimonials" >
+        <h2  class="testimonial">Nos ateliers</h2>
+        <div id="testimonials-container-header" class="testimonials-container"></div>
+        <div class="slider-buttons">
+            <button id="prevButtonHeader">Précédent</button>
+            <button id="nextButtonHeader">Suivant</button>
+        </div>
+    </section>
+    
+    
+    <script>
+        initializeTestimonialsSlider('testimonials-container-header', 'prevButtonHeader', 'nextButtonHeader');
+    </script>
+
+
+   
+    
       </div>
         <div class="container">
             <div class="header">
@@ -174,16 +250,15 @@
                 </span>
                 </a>
                 <ul class="nav">
-                <li class="nav-item"><a href="/" class="nav-link"><?php _e('Accueil', 'ostal'); ?></a></li>
-                <li class="nav-item"><a href="#descriptif" class="nav-link"><?php _e('Présentation', 'ostal'); ?></a></li>
-                <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'ostal'); ?></a></li>
-                <li class="nav-item"><a href="#equipments" class="nav-link"><?php _e('Equipements', 'ostal'); ?></a></li>
-                <li class="nav-item"><a href="#testimonial" class="nav-link nav-link-magic"><?php _e('Testimonial', 'ostal'); ?></a></li>
-                <li class="nav-item"><a href="#reservation" class="nav-link nav-link-magic"><?php _e('Reservation', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="/" class="nav-link"><?php _e('Accueil', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="#descriptif" class="nav-link"><?php _e('Présentation', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="#fablab" class="nav-link"><?php _e('Fab&apos;Lab', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="#ateliers" class="nav-link nav-link-magic"><?php _e('Ateliers', 'ostal'); ?></a></li>
+                    <li class="nav-item"><a href="#reservation" class="nav-link nav-link-magic"><?php _e('Reservation', 'ostal'); ?></a></li>
                 </ul>
             </div>
-            <p class="ostal"><?php _e('Ostal Numérique', 'ostal'); ?></p>
-            <p class="ranks">Classement préfécture ★★★★</p>
-            <p class="ranks">Hébergement Qualité Périgord Vert</p>
+            
+            
         </div>
       </header>
