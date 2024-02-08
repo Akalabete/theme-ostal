@@ -23,7 +23,7 @@
       <div class="header">
         <div class="logo_title">
           <a href="/" class="logolink">
-          <img class="logo" width="150" height="150" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="<?php _e('Les Grands Chênes', 'ostal'); ?>" />
+          <img class="logo" width="200" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoostal.webp" alt="<?php _e('l&apos;Ostal tiers-lieu', 'ostal'); ?>" />
           </a>
           <ul class="nav">
               <li class="nav-item"><a href="#descriptif" class="nav-link"><?php _e('Présentation', 'ostal'); ?></a></li>
@@ -32,10 +32,16 @@
               <li class="nav-item"><a href="#ateliers" class="nav-link nav-link-magic"><?php _e('Ateliers', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#links" class="nav-link nav-link-magic"><?php _e('Liens utiles', 'ostal'); ?></a></li>
           </ul>
-       
-        
+
         </div>
-        <div>
+      </div>
+      <div class="intro-container">
+        <div class="intro-photo">
+          <picture>
+          <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/pexels-airam-datoon-20044382.webp" sizes="(min-width: 768px) 900px, 60vw">
+            <img class="photo" width="320" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/pexels-airam-datoon-20044382.webp" alt="<?php _e('image de fond avec plusieurs personnes travaillant autour d&apos;un ordinateur', 'ostal'); ?>" />
+          </picture>
+        </div>
         <p class="intro">
         <?php 
         $introduction = get_option('ostal_settings_field_introduction');
@@ -43,6 +49,5 @@
         echo $introduction;
         ?>
         </p>
-        </div>
       </div>
     </header>

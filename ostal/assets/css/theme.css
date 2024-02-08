@@ -4,14 +4,47 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    min-width: 320px;
+    min-width: 340px;
 }
-
-
-
+.header {
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: #fff4E8;
+    z-index: 1000;
+    border-bottom: solid 2px orange;
+}
+.intro-container {
+    position: relative;
+    height: 60vh;
+    margin-top: 24vh;
+    text-align: center;
+    
+}
+.intro-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 60vh;
+}
+.intro-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    opacity: 0.8;
+}
 p.intro {
     font-size: 1.5em;
     font-weight: 800;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 8vh;
     background: linear-gradient(90deg, red, yellow, blue, green, red, yellow, blue, green, red);
     background-size: 200% auto;
     color: transparent;
@@ -19,17 +52,23 @@ p.intro {
     -moz-background-clip: text;
     background-clip: text;
     animation: wave 3.5s linear infinite;
+    
 }
-
+@media screen and (min-width: 500px) {
+    p.intro{
+        font-size: 2.0em;
+    }
+}
+@media screen and (min-width: 700px) {
+    p.intro{
+        font-size: 2.5em;
+    }
+}
 @keyframes wave {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
 }
-.header {
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 .logo_title {
     display: flex;
     flex-direction: row;
@@ -37,8 +76,8 @@ p.intro {
     align-items: center;
 }
 .logo_title img {
-    width: 100%;
-    margin: 10px;
+    
+    margin-left: 20px;
 }
 .nav {
     margin-right: 10px;
@@ -72,4 +111,31 @@ p.intro {
 @keyframes wavy {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
+}
+#presentation {
+    display: none;
+}
+
+
+.presentation-container {
+
+    padding: 2vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px orange;
+    border-radius: 10px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Ajustez la taille du triangle */
+    border-right: 50px solid transparent; /* Ajustez la taille du triangle */
+    border-bottom: 87px solid red; /* Ajustez la taille et la couleur du triangle */
 }

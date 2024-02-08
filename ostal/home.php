@@ -8,17 +8,15 @@
 
     <section class="topic">
         <div class="sub-topic">
-            <div class="main-cover-pic pic">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/medium/coverpicmedium.webp" sizes="(min-width: 768px) 900px, 100vw">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/small/coverpicsmall.webp" alt="Photo de couverture du site" class="img-class" width="400" height="300">
-                </picture>
-            </div>
             <h2 id="presentation"><?php _e('présentation', 'ostal'); ?></h2>
             <div class="presentation-container">
                 <p id="descriptif" class="presentation">
-                    <?php _e('
-                    Ostal Numérique est une association qui a pour but de promouvoir le numérique en milieu rural. Elle propose des formations, des ateliers et des conseils sur le numérique. Elle accompagne les particuliers dans leur transition numérique.', 'ostal'); ?>
+                    <?php 
+                        $texte = __('Ostal Numérique est une association qui a pour but de promouvoir le numérique en milieu rural. Elle propose des formations, des ateliers et des conseils sur le numérique. Elle accompagne les particuliers dans leur transition numérique.', 'ostal');
+                        $texte = str_replace('Ostal Numérique', '<strong>Ostal Numérique</strong>', $texte);
+                        echo $texte;
+                    ?>
+                    
                 </p>
                 <ul class="activity-list">
                     <li class="activity-item"><?php _e('Sensibilisation cyber-sécurité,', 'ostal'); ?></li>
@@ -26,11 +24,15 @@
                     <li class="activity-item"><?php _e('Ateliers VR,,', 'ostal'); ?></li>
                     <li class="activity-item"><?php _e('Fab&apos;lab,', 'ostal'); ?></li>
                     <li class="activity-item"><?php _e('Repair&apos;café,', 'ostal'); ?></li>
-                    <li class="activity-item"><?php _e('Menus travaux d&apos;impression,', 'ostal'); ?></li>
+                    <li class="activity-item"><?php _e('Petits travaux d&apos;impression,', 'ostal'); ?></li>
                     <li class="activity-item"><?php _e('Wifi en accès libre...', 'ostal'); ?></li>
                 </ul>
                 <p class="presentation">
-                    <?php _e('L&apos;Ostal c&apos;est un lieu convivial, à coté de chez vous, ou l&apos;on peut échanger sur le thème du numérique autour d&apos;un café', 'ostal'); ?>
+                        <?php
+                            $texte = __('L&apos;Ostal c&apos;est un lieu convivial, à coté de chez vous, ou l&apos;on peut échanger sur le thème du numérique autour d&apos;un café', 'ostal');
+                            $texte = str_replace('L&apos;Ostal', '<strong>L&apos;Ostal</strong>', $texte);
+                            echo $texte;
+                        ?>
                 </p>
             </div>
         </div>
