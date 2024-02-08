@@ -26,13 +26,11 @@
           <img class="logo" width="200" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoostal.webp" alt="<?php _e('l&apos;Ostal tiers-lieu', 'ostal'); ?>" />
           </a>
           <ul class="nav">
-              <li class="nav-item"><a href="#descriptif" class="nav-link"><?php _e('Présentation', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#fablab" class="nav-link"><?php _e('Fab&apos;Lab', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#ateliers" class="nav-link nav-link-magic"><?php _e('Ateliers', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#links" class="nav-link nav-link-magic"><?php _e('Liens utiles', 'ostal'); ?></a></li>
           </ul>
-
         </div>
       </div>
       <div class="intro-container">
@@ -50,4 +48,5 @@
         ?>
         </p>
       </div>
+      
     </header>
