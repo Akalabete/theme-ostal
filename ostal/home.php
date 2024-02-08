@@ -26,6 +26,7 @@
                 <ul class="activity-list">
                     <li class="activity-item"><div class="triangle"></div><?php _e('Sensibilisation cyber-sécurité,', 'ostal'); ?></li>
                     <li class="activity-item"><div class="triangle"></div><?php _e('Initiation à la  bureautique,', 'ostal'); ?></li>
+                    <li class="activity-item"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
                     <li class="activity-item"><div class="triangle"></div><?php _e('Espace de co-working,', 'ostal'); ?></li>
                     <li class="activity-item"><div class="triangle"></div><?php _e('Ateliers VR,,', 'ostal'); ?></li>
                     <li class="activity-item"><div class="triangle"></div><?php _e('Fab&apos;lab,', 'ostal'); ?></li>
@@ -73,6 +74,7 @@
                         <li class="activity-item"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
                         <li class="activity-item"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
                         <li class="activity-item"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
+                        <li class="activity-item"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
                         <li class="activity-item"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
                         <li class="activity-item"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
                         <li class="activity-item"><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
