@@ -7,7 +7,6 @@ body {
     min-width: 340px;
 }
 .header {
-    
     padding: 20px 0;
     top: 0;
     left: 0;
@@ -80,7 +79,6 @@ p.intro {
 }
 .nav {
     margin-right: 10px;
-    line-height: 1.8em;
     list-style-type: none;
     text-align: left;
 }
@@ -89,6 +87,8 @@ p.intro {
     color: black;
     display: inline-block;
     position: relative;
+    font-size: 1.5em;
+    line-height: 1.8em;
     overflow: hidden;
 }
 
@@ -214,13 +214,18 @@ h1, .pres-content-one, .pres-content-two{
     display: flex;
     flex-direction: column;
 }
-#localisation, #description, .equipe {
+h2 {
     margin-left: 10%;
     font-size: 2em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 .adresse {
     margin: 10px auto;
+    text-align: center;
     padding: 10px;
     width: 50%;
     background-color: white;
@@ -271,4 +276,97 @@ h1, .pres-content-one, .pres-content-two{
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+}
+
+.lienzapier {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    align-items: center; /* aligne les éléments verticalement au centre */
+    justify-content: center; /* aligne les éléments horizontalement au centre */
+    border: solid 2px orange;
+    background-color: white;
+    border-radius: 10px;
+}
+.lienzapier p{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 3vh;
+    text-align: center;
+}
+.zapier-link {
+    text-decoration: none;
+}
+.bigtriangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid rgb(142, 176, 92);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 2%;
+    transition: transform 0.5s
+}
+.zapier-link:hover .bigtriangle {
+    transform: rotate(450deg);
+}
+.zapier-link:hover p {
+    text-decoration: underline 4px orange;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact-item {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: solid 2px orange;
+    border-radius: 10px;
+}
+.contact-item p {
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 2vh;
+}
+
+.top-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.minitriangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid rgb(142, 176, 92);
+    
+    margin-bottom: 5px;
+    transition: transform 0.5s
+}
+.top-button:hover .minitriangle {
+    transform: rotate(360deg);
+}
+.partenaire-item {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: solid 2px orange;
+    border-radius: 10px;
 }

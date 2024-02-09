@@ -16,9 +16,6 @@
         <div class="footer-item">
             <p>by <a href="www.lacouralexandre.tech" id="webmaster">Dev'your synergy</a></p>
         </div>
-        <div class="footer-item">
-            <p><a href="/"><?php _e('Accueil', 'ostal'); ?></a></p>
-        </div>
     </div>
     <?php wp_footer(); ?>
   </body>

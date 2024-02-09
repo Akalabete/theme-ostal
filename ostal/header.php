@@ -21,7 +21,7 @@
     
 
       <div class="header">
-        <div class="logo_title">
+        <div id="top" class="logo_title">
           <a href="/" class="logolink">
           <img class="logo" width="200" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoostal.webp" alt="<?php _e('l&apos;Ostal tiers-lieu', 'ostal'); ?>" />
           </a>

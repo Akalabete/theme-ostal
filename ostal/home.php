@@ -5,7 +5,10 @@
         $mobile_number = get_option('ostal_settings_field_mobile_number');
       ?>
 <main>
-
+    <a href="#top" class="top-button-link">
+        <div class="top-button">
+            <div class="minitriangle"></div>
+        </div></a>
     <section >
         <div >
             <div class="presentation-container">
@@ -92,6 +95,37 @@
                 </picture>
             </div>
         
+        </div>
+    </section>
+    <section>
+        <h2 id="contact"><?php _e('Besoin d&apos;informations, envie de participer à un atelier... ?', 'ostal'); ?></h2>
+        <a class="zapier-link" href="https://ostal.zapier.app/" target="_blank">
+            <div class="lienzapier">
+                <div class="bigtriangle"></div>
+                <p>Lien vers notre boite à outils et canaux de communications</p>
+            </div>
+        </a>
+        <div class="contact-container">
+            <div class="contact-item">
+                <h3><?php _e('Contactez-nous', 'ostal'); ?></h3>
+                <p><?php _e('Par téléphone:', 'ostal'); ?> <?php echo $phone_number; ?></p>
+                <p><?php _e('Par mail:', 'ostal'); ?> <?php echo $email; ?></p>
+                <p><?php _e('Par mobile:', 'ostal'); ?> <?php echo $mobile_number; ?></p>
+            </div>
+            <div class="contact-item">
+                <h3><?php _e('Horaires d&apos;ouverture', 'ostal'); ?></h3>
+                <p><?php _e('Du lundi au vendredi:', 'ostal'); ?> 9h-12h / 14h-17h</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 id="partenaires"><?php _e('Nos partenaires', 'ostal'); ?></h2>
+        <div class="partenaires-container">
+            <div class="partenaire-item">
+                <a href="http://www.cc-paysdesaintaulaye.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logostaulayepuymangou.webp" alt="Logo partenaire 1" width="200" height="120"></a>
+                <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocdcpaysstaulaye.webp" alt="Logo partenaire 2" width="200" height="98"></a>
+                <a href="https://www.saint-aulaye.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonouvelleacquitaine.webp" alt="Logo partenaire 3" width="200" height="120"></a>
+            </div>
         </div>
     </section>
     <script>
