@@ -70,27 +70,41 @@
                 <div id="equipments"class="description">
                     <h3 class="description-situ"><?php _e('Des équipements modernes, des conseils personnalisés et des animations originales...', 'ostal'); ?></h3>
                     <ul>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
-                        <li class="activity-item"><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Salle de visio-conférence équipée"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Espace de co-working"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
+                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Atelier DAO, arduino, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
                     </ul>
-                    <div class="image-slider"></div>
+                    <div class="image-showcase">
+                        <img id="showcase-image" width="300" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.webp" alt="Accueil de l'association">
+                    </div>
                 </div>
             </div>
+            <h2 class="equipe"><?php _e('Une équipe à votre écoute', 'ostal'); ?></h2>
             <div class="pic">
-            <h3 class="description-lodge"><?php _e('Une équipe à votre écoute', 'ostal'); ?></h3>
                 <picture>
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/medium/pic-three-medium.webp" sizes="(min-width: 768px) 900px, 100vw">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/small/pic-three-small.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
+                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipe.webp" sizes="(min-width: 768px) 900px, 100vw">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipe.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
                 </picture>
             </div>
         
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var items = document.querySelectorAll('.showcase-item');
+            items.forEach(function(item) {
+                item.addEventListener('mouseover', function() {
+                    var image = document.getElementById('showcase-image');
+                    image.src = "<?php echo get_template_directory_uri(); ?>" + this.dataset.image;
+                    image.alt = this.dataset.alt;
+                })
+            })
+        });
+    </script>
 </main>
 <?php get_footer(); ?>
