@@ -114,7 +114,6 @@ p.intro {
 
 
 .presentation-container {
-
     padding: 2vh;
     margin: 40px auto;
     display: flex;
@@ -215,6 +214,22 @@ h1, .pres-content-one, .pres-content-two{
     display: flex;
     flex-direction: column;
 }
+@media screen and (min-width: 1040px){
+    #situation {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .localisation-container {
+        max-width: 50%;
+    }
+    .adresse {
+        max-width: 25%;
+        height: 50%;
+
+    }
+}
 h2 {
     margin-left: 10%;
     font-size: 2em;
@@ -247,6 +262,8 @@ h3 {
 }
 
 .description {
+    display: flex;
+    flex-direction: column;
     margin: 20px auto;
     padding: 10px;
     width: 90%;
@@ -257,8 +274,23 @@ h3 {
 .image-showcase {
     width: 80%;
     margin: 20px auto;
-    height: 30vh;
-    
+    height: 30vh; 
+}
+.equipments-container {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 1040px){
+    .equipments-container {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .image-showcase {
+        width: 40%;
+        height: 40vh;
+    }
 }
 .image-showcase img {
     width: 100%;
@@ -278,7 +310,27 @@ h3 {
     object-fit: cover;
     border-radius: 30px;
 }
+@media screen and (min-width: 750px){
+    .links, .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .links > *, .contact-item {
+        width: 70% !important;
+        margin: auto;
+    }
+}
 
+@media screen and (min-width: 1080px) {
+    .links, .contact-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+     .contact-item {
+        width: 45% !important;
+        margin: auto;
+    }
+}
 .lienzapier, .calendrierresa {
     margin: 20px auto;
     width: 80%;
@@ -316,10 +368,10 @@ h3 {
 .zapier-link:hover p, .calendar-link:hover p {
     text-decoration: underline 4px orange;
 }
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+.contact-container, .links {
+    width: 80%;
+    margin: 20px auto;
 }
 .contact-item {
     width: 80%;
@@ -372,6 +424,9 @@ h3 {
     transform: rotate(360deg);
 }
 .partenaire-item {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 80%;
     margin: 20px auto;
     padding: 10px;
@@ -379,4 +434,24 @@ h3 {
     background-color: white;
     border: solid 2px orange;
     border-radius: 10px;
+}
+@media screen and (min-width: 720px){
+    .partenaire-item {
+        flex-direction: row;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 1040px){
+    .footer-item {
+        margin: 20px 0 20px 50px;;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

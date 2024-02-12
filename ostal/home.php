@@ -15,8 +15,8 @@
             <div class="presentation-container">
                 <p id="descriptif" class="presentation pres-content-one">
                     <?php 
-                        $texte = __('Ostal Numérique est une association qui a pour but de promouvoir le numérique en milieu rural.', 'ostal');
-                        $texte = str_replace('Ostal Numérique', '<strong>Ostal Numérique</strong>', $texte);
+                        $texte = __('Ostal Tiers-Lieu est une association qui a pour but de promouvoir le numérique en milieu rural.', 'ostal');
+                        $texte = str_replace('Ostal Tiers-Lieu', '<strong>Ostal Tiers-Lieu</strong>', $texte);
                         echo $texte;
                     ?>
                 </p>
@@ -55,7 +55,7 @@
             <h2 id="localisation"><?php _e('Ou nous trouver ?', 'ostal')?></h2>
             <div id="situation" class="adress-loc-container">
                 <div class="adresse">
-                    <h3 class="adress-title"><?php _e('Ostal Numérique', 'ostal'); ?></h3>
+                    <h3 class="adress-title"><?php _e('Ostal Tiers-Lieu', 'ostal'); ?></h3>
                     <p class="adress-description"><?php _e('9 bis Rue du Dr H Lacroix', 'ostal'); ?>
                         </br>
                         <span><?php _e('24410 Saint-Aulaye-Puymangou', 'ostal'); ?></span>
@@ -70,23 +70,29 @@
     <section >
         <div >
             <div class="description-wrapper">
-                <h2 id="description">Nous proposons:</h2>
+                <h2>Nous proposons:</h2>
                 <div id="equipments"class="description">
                     <h3 class="description-situ"><?php _e('Des équipements modernes, des conseils personnalisés et des animations originales...', 'ostal'); ?></h3>
-                    <ul>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Salle de visio-conférence équipée"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Espace de co-working"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
-                        <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Atelier DAO, arduino, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
-                    </ul>
-                    <div class="image-showcase">
-                        <img id="showcase-image" width="300" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.webp" alt="Accueil de l'association">
+                    <div class="equipments-container">
+                        <div>
+                            <ul>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Salle de visio-conférence équipée"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Espace de co-working"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Atelier DAO, arduino, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
+                            </ul>
+                        </div>
+                        <div class="image-showcase">
+                            <img id="showcase-image" width="300" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.webp" alt="Accueil de l'association">
+                        </div>
                     </div>
                 </div>
+              
+                
             </div>
             <h2 class="equipe"><?php _e('Une équipe à votre écoute', 'ostal'); ?></h2>
             <div class="pic">
@@ -99,19 +105,21 @@
         </div>
     </section>
     <section>
-        <h2 id="contact"><?php _e('Besoin d&apos;informations, envie de participer à un atelier... ?', 'ostal'); ?></h2>
-        <a class="zapier-link" href="https://ostal.zapier.app/" target="_blank">
-            <div class="lienzapier">
-                <div class="bigtriangle"></div>
-                <p><?php _e('Lien vers notre boite à outils et canaux de communications','ostal') ?></p>
-            </div>
-        </a>
-        <a class="calendar-link" href="" target="_blank">
-            <div class="calendrierresa">
-                <div class="bigtriangle"></div>
-                <p><?php _e('Lien vers notre calendrier d&apos;ateliers','ostal') ?></p>
-            </div>
-        </a>
+    <h2 id="contact"><?php _e('Besoin d&apos;informations, envie de participer à un atelier... ?', 'ostal'); ?></h2>
+        <div class="links">
+            <a class="zapier-link" href="https://ostal.zapier.app/" target="_blank">
+                <div class="lienzapier">
+                    <div class="bigtriangle"></div>
+                    <p><?php _e('Lien vers notre boite à outils et canaux de communications','ostal') ?></p>
+                </div>
+            </a>
+            <a class="calendar-link" href="" target="_blank">
+                <div class="calendrierresa">
+                    <div class="bigtriangle"></div>
+                    <p><?php _e('Lien vers notre calendrier d&apos;ateliers','ostal') ?></p>
+                </div>
+            </a>
+        </div>
         <div class="contact-container">
             <div class="contact-item">
                 <h3><?php _e('Contactez-nous', 'ostal'); ?></h3>
