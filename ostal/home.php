@@ -11,6 +11,7 @@
         </div></a>
     <section >
         <div >
+            
             <div class="presentation-container">
                 <p id="descriptif" class="presentation pres-content-one">
                     <?php 
@@ -138,6 +139,18 @@
                     image.alt = this.dataset.alt;
                 })
             })
+        });
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var container = document.querySelector('.presentation-container');
+            var elements = container.querySelectorAll('p, h1, ul');
+
+            elements.forEach((element, index) => {
+                element.style.opacity = 0;
+                element.style.transition = 'opacity 1.5s ease-in-out';
+                setTimeout(() => {
+                    element.style.opacity = 1;
+                }, 1000 * (index + 1));
+            });
         });
     </script>
 </main>
