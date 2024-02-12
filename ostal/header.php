@@ -27,9 +27,9 @@
           </a>
           <ul class="nav">
               <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'ostal'); ?></a></li>
-              <li class="nav-item"><a href="#fablab" class="nav-link"><?php _e('Fab&apos;Lab', 'ostal'); ?></a></li>
-              <li class="nav-item"><a href="#ateliers" class="nav-link nav-link-magic"><?php _e('Ateliers', 'ostal'); ?></a></li>
+              <li class="nav-item"><a href="#fablab" class="nav-link"><?php _e('Equipements', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#links" class="nav-link nav-link-magic"><?php _e('Liens utiles', 'ostal'); ?></a></li>
+              <li class="nav-item"><a href="#ateliers" class="nav-link nav-link-magic"><?php _e('Reserver atelier', 'ostal'); ?></a></li>
           </ul>
         </div>
       </div>

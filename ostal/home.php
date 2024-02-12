@@ -22,7 +22,7 @@
                 </p>
                 <h1 class="h1-container">
                     <?php 
-                        $texte = __('L&apos;Ostal propose des formations, des ateliers et des conseils sur le numérique. Elle accompagne les particuliers dans leur transition numérique.','ostal');
+                        $texte = __('L&apos;Ostal propose des formations, des ateliers et des conseils en informatique. Elle accompagne les particuliers dans leur transition numérique.','ostal');
                         $texte = str_replace('L&apos;Ostal', '<strong>L&apos;Ostal</strong>', $texte);
                         echo $texte;
                     ?>
@@ -103,7 +103,13 @@
         <a class="zapier-link" href="https://ostal.zapier.app/" target="_blank">
             <div class="lienzapier">
                 <div class="bigtriangle"></div>
-                <p>Lien vers notre boite à outils et canaux de communications</p>
+                <p><?php _e('Lien vers notre boite à outils et canaux de communications','ostal') ?></p>
+            </div>
+        </a>
+        <a class="calendar-link" href="" target="_blank">
+            <div class="calendrierresa">
+                <div class="bigtriangle"></div>
+                <p><?php _e('Lien vers notre calendrier d&apos;ateliers','ostal') ?></p>
             </div>
         </a>
         <div class="contact-container">
@@ -111,7 +117,7 @@
                 <h3><?php _e('Contactez-nous', 'ostal'); ?></h3>
                 <p><?php _e('Par téléphone:', 'ostal'); ?> <?php echo $phone_number; ?></p>
                 <p><?php _e('Par mail:', 'ostal'); ?> <?php echo $email; ?></p>
-                <p><?php _e('Par mobile:', 'ostal'); ?> <?php echo $mobile_number; ?></p>
+                <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
             </div>
             <div class="contact-item">
                 <h3><?php _e('Horaires d&apos;ouverture', 'ostal'); ?></h3>
