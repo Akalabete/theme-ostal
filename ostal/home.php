@@ -126,9 +126,9 @@
                 <h3><?php _e('Contactez-nous', 'ostal'); ?></h3>
                 <p><?php _e('Par téléphone:', 'ostal'); ?> <?php echo $phone_number; ?></p>
                 <p><?php _e('Par mail:', 'ostal'); ?> <?php echo $email; ?></p>
-                <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
-                <p class="centered-content"><?php _e('Sur Instagram:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.webp" alt="logo d&apos;Instagram" width="30" height="30"/></a></p>
-                <p class="centered-content"><?php _e('Sur LinkedIn:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.webp" alt="logo de Linkedin" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur Instagram:', 'ostal'); ?><a href="https://www.instagram.com/ostalnumerique/" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.webp" alt="logo d&apos;Instagram" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur LinkedIn:', 'ostal'); ?><a href="https://www.linkedin.com/in/ostal-tiers-lieu-016472287" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.webp" alt="logo de Linkedin" width="30" height="30"/></a></p>
             </div>
             <div class="contact-item v-center">
                 <h3><?php _e('Horaires d&apos;ouverture', 'ostal'); ?></h3>
