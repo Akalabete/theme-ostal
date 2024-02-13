@@ -76,18 +76,19 @@
                     <div class="equipments-container">
                         <div>
                             <ul>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Salle de visio-conférence équipée"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Espace de co-working"><div class="triangle"></div><?php _e('Espace de co-working', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image1.jpg" data-alt="Atelier DAO, arduino, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, console switch...', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/libreaccesmed.webp" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image2.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image3.jpg" data-alt="Salle de visio-conférence équipée, 10€/jour"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée, 10€/jour', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image4.jpg" data-alt="Espace de co-working, 5€/jour"><div class="triangle"></div><?php _e('Espace de co-working, 5€/jour', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/bureauprivmed.webp" data-alt="Bureau privatif 10€/jour"><div class="triangle"></div><?php _e('Bureau privatif, 10€/jour', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image6.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image7.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image8.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="chemin_vers_image9.jpg" data-alt="Atelier DAO, arduino, drone, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, drone, console switch...', 'ostal'); ?></li>
                             </ul>
                         </div>
                         <div class="image-showcase">
-                            <img id="showcase-image" width="300" height="200" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.webp" alt="Accueil de l'association">
+                            <img id="showcase-image" width="700" height="525" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueilmed.webp" alt="Accueil de l'association">
                         </div>
                     </div>
                 </div>
@@ -126,8 +127,10 @@
                 <p><?php _e('Par téléphone:', 'ostal'); ?> <?php echo $phone_number; ?></p>
                 <p><?php _e('Par mail:', 'ostal'); ?> <?php echo $email; ?></p>
                 <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur Instagram:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.webp" alt="logo d&apos;Instagram" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur LinkedIn:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logofb" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.webp" alt="logo de Linkedin" width="30" height="30"/></a></p>
             </div>
-            <div class="contact-item">
+            <div class="contact-item v-center">
                 <h3><?php _e('Horaires d&apos;ouverture', 'ostal'); ?></h3>
                 <p><?php _e('Du lundi au vendredi:', 'ostal'); ?> 9h-12h / 14h-17h</p>
             </div>
@@ -138,8 +141,10 @@
         <div class="partenaires-container">
             <div class="partenaire-item">
                 <a href="http://www.cc-paysdesaintaulaye.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logostaulayepuymangou.webp" alt="Logo partenaire 1" width="200" height="120"></a>
-                <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocdcpaysstaulaye.webp" alt="Logo partenaire 2" width="200" height="98"></a>
-                <a href="https://www.saint-aulaye.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonouvelleacquitaine.webp" alt="Logo partenaire 3" width="200" height="120"></a>
+                <a href="https://www.saint-aulaye.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocdcpaysstaulaye.webp" alt="Logo partenaire 2" width="200" height="98"></a>
+                <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonouvelleacquitaine.webp" alt="Logo partenaire 3" width="200" height="120"></a>
+                <a href="https://www.dordogne.gouv.fr/contenu/telechargement/38546/263442/file/Coordonn%C3%A9es_Conseillers+num%C3%A9riques+France+Services.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoconseilnum.webp" alt="Logo partenaire 3" width="200" height="100"></a>
+                <a href="https://www.asept-perigord-agenais.fr/agenda/departement/dordogne-24.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoasept.webp" alt="Logo partenaire 3" width="200" height="200"></a>
             </div>
         </div>
     </section>
