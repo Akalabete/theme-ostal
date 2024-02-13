@@ -98,8 +98,9 @@
             <h2 class="equipe"><?php _e('Une équipe à votre écoute', 'ostal'); ?></h2>
             <div class="pic">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipe.webp" sizes="(min-width: 768px) 900px, 100vw">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipe.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
+                    <source media="(min-width: 1500px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipelg.webp" sizes="(min-width: 1500px) 900px, 100vw">
+                    <source media="(min-width: 768px) and (max-width: 1499)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipemed.webp" sizes="(min-width: 768px) 900px, 100vw">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipesm.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
                 </picture>
             </div>
         
