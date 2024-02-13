@@ -8,10 +8,10 @@
     <a href="#top" class="top-button-link">
         <div class="top-button">
             <div class="minitriangle"></div>
-        </div></a>
+        </div>
+    </a>
     <section >
         <div >
-            
             <div class="presentation-container">
                 <p id="descriptif" class="presentation pres-content-one">
                     <?php 
@@ -70,7 +70,7 @@
     <section >
         <div >
             <div class="description-wrapper">
-                <h2>Nous proposons:</h2>
+                <h2><?php _e('Nous proposons:', 'ostal') ?></h2>
                 <div id="equipments"class="description">
                     <h3 class="description-situ"><?php _e('Des équipements modernes, des conseils personnalisés et des animations originales...', 'ostal'); ?></h3>
                     <div class="equipments-container">
