@@ -77,14 +77,14 @@
                         <div>
                             <ul>
                                 <li class="activity-item showcase-item" data-image="/assets/images/libreaccesmed.webp" data-alt="Ordinateurs & connexion internet en libre accès"><div class="triangle"></div><?php _e('Ordinateurs & connexion internet en libre accès.', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image2.jpg" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image3.jpg" data-alt="Salle de visio-conférence équipée, 10€/jour"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée, 10€/jour', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image4.jpg" data-alt="Espace de co-working, 5€/jour"><div class="triangle"></div><?php _e('Espace de co-working, 5€/jour', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/casqueVRmed.webp" data-alt="Des casques de réalités virtuels"><div class="triangle"></div><?php _e('Des casques de réalités virtuels', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/reunionmed.webp" data-alt="Salle de visio-conférence équipée, 10€/jour"><div class="triangle"></div><?php _e('Salle de visio-conférence équipée, 10€/jour', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/bureauprivmed.webp" data-alt="Espace de co-working, 5€/jour"><div class="triangle"></div><?php _e('Espace de co-working, 5€/jour', 'ostal'); ?></li>
                                 <li class="activity-item showcase-item" data-image="/assets/images/bureauprivmed.webp" data-alt="Bureau privatif 10€/jour"><div class="triangle"></div><?php _e('Bureau privatif, 10€/jour', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image6.jpg" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image7.jpg" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image8.jpg" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
-                                <li class="activity-item showcase-item" data-image="chemin_vers_image9.jpg" data-alt="Atelier DAO, arduino, drone, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, drone, console switch...', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/exposmed.webp" data-alt="Expo artistiques temporaires"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/imprimante3dmed.webp" data-alt="Imprimantes classiques et 3D"><div class="triangle"></div><?php _e('Imprimantes classiques et 3D', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/ateliersmed.webp" data-alt="Animations thématiques"><div class="triangle"></div><?php _e('Animations thématiques', 'ostal'); ?></li>
+                                <li class="activity-item showcase-item" data-image="/assets/images/dronemed.webp" data-alt="Atelier DAO, arduino, drone, console switch..."><div class="triangle"></div><?php _e('Atelier DAO, arduino, drone, console switch...', 'ostal'); ?></li>
                             </ul>
                         </div>
                         <div class="image-showcase">
