@@ -19,9 +19,12 @@ body {
 }
 .nav-link {
     background-color: rgb(142, 176, 92);
+    width: 200px;
+    text-align: center;
     padding: 10px;
     border-radius: 25px;
     line-height: 1em;  
+    margin-bottom: 1vh;
 }
 
 .nav-link:hover {
@@ -93,7 +96,7 @@ p.intro {
 
 
 .presentation-container {
-    padding: 2vh;
+    background-color: white;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
@@ -101,11 +104,12 @@ p.intro {
     align-items: center;
     border: solid 4px orange;
     border-radius: 10px;
-    width: 80%;
-    background-image: url('../images/fondprincipal.webp');
-    background-size: cover;
-    background-position: center;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+}
+@media screen and (min-width: 1040px) {
+    .presentation-container {
+        flex-direction: row;
+    }
 }
 
 .triangle {
@@ -136,18 +140,47 @@ li {
 .activity-item:hover {
     text-decoration: underline 2px orange;
 }
+.presentation-pic {
+    width: 50%;
+    margin: 1vh auto;
 
+}
+
+.presentation-pic img {
+    border-radius: 10px;
+}
+@media screen and (min-width: 1040px) {
+    .presentation-pic {
+        width: 100%;
+       
+        margin-left: 5%;
+    }
+    .presentation-pic img {
+        width: 500px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1480px) {
+    .presentation-pic img {
+        width: 600px;
+        height: auto;
+    }
+    .nav a {
+        font-size: 1.8em;
+        margin-right: 2vh;
+    }
+
+}
 h1, .pres-content-one, .pres-content-two{ 
-    background-color: rgba(0, 0, 0, 0.5);
-    color:white;
+    background-color: #fff4E8;
+    color:black;
     font-weight: 500;
     font-size: 1.5em;
-    margin: 20px;
-    width: 95%;
+    margin: 20px auto;
+    width: 85%;
     border: solid 2px orange;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .activity-list {
@@ -233,16 +266,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-@media screen and (min-width: 1040px){
-    .pic {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .equipe-description {
-        max-width: 500px;        
-    }
 }
 
 .pic img {
@@ -412,13 +435,7 @@ h3 {
     h1, .pres-content-one, .pres-content-two{
         width: 70%;
     }
-    .pres-content-one {
-        margin-left: -25%;
-    }
-    .pres-content-two {
-        margin-left: 45%;
-        width: 55%;
-    }
+
     p.intro{
         font-size: 2.5em;
     }
@@ -454,6 +471,14 @@ h3 {
         justify-content: space-evenly;
         align-items: center;
     }
+    .pic {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .equipe-description {
+        max-width: 500px;        
+    }
     .image-showcase {
         width: 50%;   
     }
@@ -478,12 +503,17 @@ h3 {
         justify-content: space-around;
     }
     .nav a {
-        font-size: 1.8em;
-        margin-right: 2vh;
+        font-size: 1.6em;
+        margin-right: 1vh;
     }
     .nav {
         display: flex;
         flex-direction: row;
+    }
+    .nav-link {
+        width: auto;
+        text-align: left;
+        
     }
 }
 
@@ -496,21 +526,8 @@ h3 {
         width: 45% !important;
         margin: auto;
     }
-    h1, .pres-content-one, .pres-content-two{
-        width: 50%;
+    h1, .pres-content-one, .pres-content-two{ 
         font-size: 2em;
-    }
-    h1{
-        margin-left: -20%;
-    }
-    .pres-content-one {
-        margin-left: -45%;
-    }
-    .activity-list {
-        margin-left: -30%;
-    }
-    .pres-content-two {
-        margin-left: 45%;
     }
 }
 /* anims */

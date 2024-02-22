@@ -13,6 +13,13 @@
     <section >
         <div >
             <div class="presentation-container">
+                <div class="presentation-pic">
+                    <picture>
+                        <source media="(min-width: 1040px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipal.webp" sizes="(min-width: 1040px) 900px, 100vw">
+                        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipal.webp" alt="Accueil de l'association" class="img-class" width="400" height="300">
+                    </picture>
+                </div>
+                <div class="presentation-description">
                 <p id="descriptif" class="presentation pres-content-one">
                     <?php 
                         $texte = __('Ostal Tiers-Lieu est une association qui a pour but de promouvoir le numérique en milieu rural.', 'ostal');
@@ -27,24 +34,14 @@
                         echo $texte;
                     ?>
                 </h1>
-                <ul class="activity-list">
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Sensibilisation cyber-sécurité,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Initiation à la  bureautique,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Expo artistiques temporaires,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Espace de co-working,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Ateliers VR,,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Fab&apos;lab,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Repair&apos;café,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Petits travaux d&apos;impression,', 'ostal'); ?></li>
-                    <li class="activity-item"><div class="triangle"></div><?php _e('Wifi en accès libre...', 'ostal'); ?></li>
-                </ul>
                 <p class="presentation pres-content-two">
                         <?php
-                            $texte = __('L&apos;Ostal c&apos;est un lieu convivial, à coté de chez vous, ou l&apos;on peut échanger sur le thème du numérique autour d&apos;un café', 'ostal');
-                            $texte = str_replace('L&apos;Ostal', '<strong>L&apos;Ostal</strong>', $texte);
+                            $texte = __('C&apos;est un lieu convivial, à coté de chez vous, ou l&apos;on peut échanger sur le thème du numérique autour d&apos;un café.', 'ostal');
+                            $texte = str_replace('lieu convivial', '<strong>lieu convivial</strong>', $texte);
                             echo $texte;
                         ?>
                 </p>
+                </div>
             </div>
         </div>
         
