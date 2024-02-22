@@ -102,6 +102,9 @@
                     <source media="(min-width: 768px) and (max-width: 1499)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipemed.webp" sizes="(min-width: 768px) 900px, 100vw">
                     <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipesm.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
                 </picture>
+                <div class="equipe-description">
+                    <p><?php _e('Notre équipe est composée de professionnels du numérique, de bénévoles et de stagiaires. Nous sommes à votre disposition pour vous aider à vous familiariser avec les outils numériques.', 'ostal'); ?></p>
+                </div>
             </div>
         
         </div>

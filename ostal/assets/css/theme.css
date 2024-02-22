@@ -17,7 +17,17 @@ body {
     z-index: 1000;
     border-bottom: solid 2px orange;
 }
+.nav-link {
+    background-color: rgb(142, 176, 92);
+    padding: 10px;
+    border-radius: 25px;
+    line-height: 1em;  
+}
 
+.nav-link:hover {
+    background-color: orange;
+    color: rgb(142, 176, 92);
+}
 .intro-container {
     position: relative;
     height: 60vh;
@@ -74,30 +84,13 @@ p.intro {
 }
 .nav a {
     text-decoration: none;
-    color: black;
+    color: orange;
     display: inline-block;
-    position: relative;
     font-size: 1.5em;
-    line-height: 1.8em;
-    overflow: hidden;
 }
 
 
-.nav a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background:  orange;
-    transform: translateX(-101%);
-    transition: transform 0.8s;
-}
-.nav a:hover::after {
-    animation: wavy 1s linear infinite;
-    transition: transform .8s;
-}
+
 
 .presentation-container {
     padding: 2vh;
@@ -237,13 +230,35 @@ h3 {
 .pic { 
     margin: 20px auto;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 1040px){
+    .pic {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .equipe-description {
+        max-width: 500px;        
+    }
 }
 
 .pic img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 300px;;
     object-fit: cover;
     border-radius: 30px;
+}
+.equipe-description {
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px orange;
+    font-size: 1.5em;
 }
 
 .lienzapier, .calendrierresa {
