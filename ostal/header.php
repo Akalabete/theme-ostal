@@ -16,7 +16,8 @@
     <meta property="og:type" content=website>
     <meta property="og:site_name" content="Ostal Numérique">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipal.webp" as="image">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/images/logoostal.webp" as="image">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/images/pexels-airam-datoon-20044382.webp" as="image">
     <link rel=stylesheet href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.css">
     <script type="application/ld+json">
       [

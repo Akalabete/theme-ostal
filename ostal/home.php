@@ -62,7 +62,7 @@
                     </p>
                 </div>
                 <div class="localisation-container">
-                    <a href="https://www.google.fr/maps/place/Ostal+Num%C3%A9rique/@45.2039256,0.1373747,18.33z/data=!4m6!3m5!1s0x47ffe51fc85244b9:0xd28550e976528a9c!8m2!3d45.2040276!4d0.137897!16s%2Fg%2F11h_5ngd90?entry=ttu" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/plandesituation.webp" class="localisation-pic" width="1000" height="589" alt="plan de situation, lien vers google maps"></a>
+                    <a href="https://www.google.fr/maps/place/Ostal+Num%C3%A9rique/@45.2039256,0.1373747,18.33z/data=!4m6!3m5!1s0x47ffe51fc85244b9:0xd28550e976528a9c!8m2!3d45.2040276!4d0.137897!16s%2Fg%2F11h_5ngd90?entry=ttu" target="_blank"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/plandesituation.webp" class="localisation-pic" width="1000" height="589" alt="plan de situation, lien vers google maps"></a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                             </ul>
                         </div>
                         <div class="image-showcase">
-                            <img id="showcase-image" width="700" height="525" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueilmed.webp" alt="Accueil de l'association">
+                            <img loading="lazy" id="showcase-image" width="700" height="525" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueilmed.webp" alt="Accueil de l'association">
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                 <picture>
                     <source media="(min-width: 1500px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipelg.webp" sizes="(min-width: 1500px) 900px, 100vw">
                     <source media="(min-width: 768px) and (max-width: 1499)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/lequipemed.webp" sizes="(min-width: 768px) 900px, 100vw">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipesm.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/lequipesm.webp" alt="Photo de l'équipe" class="img-class" width="400" height="300">
                 </picture>
             </div>
         
@@ -127,9 +127,9 @@
                 <h3><?php _e('Contactez-nous', 'ostal'); ?></h3>
                 <p><?php _e('Par téléphone:', 'ostal'); ?> <?php echo $phone_number; ?></p>
                 <p><?php _e('Par mail:', 'ostal'); ?> <?php echo $email; ?></p>
-                <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
-                <p class="centered-content"><?php _e('Sur Instagram:', 'ostal'); ?><a href="https://www.instagram.com/ostalnumerique/" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.webp" alt="logo d&apos;Instagram" width="30" height="30"/></a></p>
-                <p class="centered-content"><?php _e('Sur LinkedIn:', 'ostal'); ?><a href="https://www.linkedin.com/in/ostal-tiers-lieu-016472287" target="_blank"><img class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.webp" alt="logo de Linkedin" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur Facebook:', 'ostal'); ?><a href="https://www.facebook.com/p/LOstal-Tiers-lieu-100063621938112/" target="_blank"><img loading="lazy" class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.webp" alt="logo de facebook" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur Instagram:', 'ostal'); ?><a href="https://www.instagram.com/ostalnumerique/" target="_blank"><img loading="lazy" class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.webp" alt="logo d&apos;Instagram" width="30" height="30"/></a></p>
+                <p class="centered-content"><?php _e('Sur LinkedIn:', 'ostal'); ?><a href="https://www.linkedin.com/in/ostal-tiers-lieu-016472287" target="_blank"><img loading="lazy" class="logo-reseaux" src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.webp" alt="logo de Linkedin" width="30" height="30"/></a></p>
             </div>
             <div class="contact-item v-center">
                 <h3><?php _e('Horaires d&apos;ouverture', 'ostal'); ?></h3>
@@ -141,11 +141,11 @@
         <h2 id="partenaires"><?php _e('Nos partenaires', 'ostal'); ?></h2>
         <div class="partenaires-container">
             <div class="partenaire-item">
-                <a href="http://www.cc-paysdesaintaulaye.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logostaulayepuymangou.webp" alt="Logo partenaire 1" width="200" height="120"></a>
-                <a href="https://www.saint-aulaye.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logocdcpaysstaulaye.webp" alt="Logo partenaire 2" width="200" height="98"></a>
-                <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonouvelleacquitaine.webp" alt="Logo partenaire 3" width="200" height="120"></a>
-                <a href="https://www.dordogne.gouv.fr/contenu/telechargement/38546/263442/file/Coordonn%C3%A9es_Conseillers+num%C3%A9riques+France+Services.pdf" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoconseilnum.webp" alt="Logo partenaire 3" width="200" height="100"></a>
-                <a href="https://www.asept-perigord-agenais.fr/agenda/departement/dordogne-24.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoasept.webp" alt="Logo partenaire 3" width="200" height="200"></a>
+                <a href="http://www.cc-paysdesaintaulaye.fr/" target="_blank"><img loading="lazy"src="<?php echo get_template_directory_uri(); ?>/assets/images/logostaulayepuymangou.webp" alt="Logo partenaire 1" width="200" height="120"></a>
+                <a href="https://www.saint-aulaye.com/" target="_blank"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/logocdcpaysstaulaye.webp" alt="Logo partenaire 2" width="200" height="98"></a>
+                <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/logonouvelleacquitaine.webp" alt="Logo partenaire 3" width="200" height="120"></a>
+                <a href="https://www.dordogne.gouv.fr/contenu/telechargement/38546/263442/file/Coordonn%C3%A9es_Conseillers+num%C3%A9riques+France+Services.pdf" target="_blank"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoconseilnum.webp" alt="Logo partenaire 3" width="200" height="100"></a>
+                <a href="https://www.asept-perigord-agenais.fr/agenda/departement/dordogne-24.html" target="_blank"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoasept.webp" alt="Logo partenaire 3" width="200" height="200"></a>
             </div>
         </div>
     </section>
