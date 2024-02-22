@@ -15,8 +15,8 @@
             <div class="presentation-container">
                 <div class="presentation-pic">
                     <picture>
-                        <source media="(min-width: 1040px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipal.webp" sizes="(min-width: 1040px) 900px, 100vw">
-                        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipal.webp" alt="Accueil de l'association" class="img-class" width="400" height="300">
+                        <source media="(min-width: 1040px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipalmed.webp" sizes="(min-width: 1040px) 700px, auto">
+                        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/fondprincipalsmall.webp" alt="Accueil de l'association" class="img-class" width="400" height="300">
                     </picture>
                 </div>
                 <div class="presentation-description">
