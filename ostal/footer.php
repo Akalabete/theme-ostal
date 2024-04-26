@@ -14,7 +14,7 @@
             <p><?php echo $mobile_number; ?></p>
         </div>
         <div class="footer-item">
-            <p>by <a href="www.lacouralexandre.tech" target="_blank" id="webmaster">Dev'your synergy</a></p>
+            <p>by <a href="https://www.lacouralexandre.tech" target="_blank" id="webmaster">Dev'your synergy</a></p>
         </div>
     </div>
     <?php wp_footer(); ?>
