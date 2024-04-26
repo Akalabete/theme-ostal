@@ -88,6 +88,31 @@
                             <img loading="lazy" id="showcase-image" width="700" height="525" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueilmed.webp" alt="Accueil de l'association">
                         </div>
                     </div>
+                    <div class="prochainevent">
+                        <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 1, 
+                            );
+
+                            $query = new WP_Query($args);
+
+                            if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+                                <h3><?php _e('Le prochain atelier que nous vous proposons:', 'ostal') ?></h3>
+                                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                <?php the_content(); ?>
+                                <p class="publicated">Publié le 
+                                    <?php 
+                                        $dateFormatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+                                        echo $dateFormatter->format(get_the_date('U')); 
+                                    ?> 
+                                    par <?php the_author(); ?>
+                                </p>
+                            <?php endwhile; endif; 
+
+                            wp_reset_postdata(); 
+                        ?>
+                    </div>
                 </div>
               
                 

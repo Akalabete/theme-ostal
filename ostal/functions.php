@@ -103,7 +103,14 @@ function theme_enqueue_styles(){
     echo '<input name="ostal_settings_field_lienresa" type="text" value="'.$value.'" />';
   }
   
-
+  function add_image_class($content){
+    global $post;
+    $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+    $replacement = '<img$1class="$2 custom-image"$3>';
+    $content = preg_replace($pattern, $replacement, $content);
+    return $content;
+ }
+  add_filter('the_content', 'add_image_class');
   add_action('admin_menu', 'ostal_add_admin_pages', 10);
   add_action('admin_init', 'ostal_settings_register');
   ?>

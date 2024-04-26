@@ -223,7 +223,7 @@
               <li class="nav-item"><a href="#situation" class="nav-link"><?php _e('Localisation', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#equipments" class="nav-link"><?php _e('Equipements', 'ostal'); ?></a></li>
               <li class="nav-item"><a href="#contact" class="nav-link"><?php _e('Liens utiles', 'ostal'); ?></a></li>
-              <li class="nav-item"><a href="#" target="_blank" class="nav-link"><?php _e('Reserver atelier', 'ostal'); ?></a></li>
+              <li class="nav-item"><a href="<?php echo site_url('/archives/'); ?>" class="nav-link"><?php _e('Reserver atelier', 'ostal'); ?></a></li>
           </ul>
         </div>
       </div>

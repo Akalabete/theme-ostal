@@ -540,3 +540,63 @@ h3 {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
 }
+
+
+/* / ateliers /  main page /*/
+
+.prochainevent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px orange;
+}
+.prochainevent h4, .prochainevent h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px auto;
+}
+.prochainevent a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px auto;
+}
+.prochainevent a:hover {
+    text-decoration: underline 2px orange;
+}
+
+/* archives liste ateliers */ 
+.archive-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px auto;
+}
+.old-list-center {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.archive {
+    display: flex;
+    flex-direction: column;
+}
+.archive-item {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+.custom-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
